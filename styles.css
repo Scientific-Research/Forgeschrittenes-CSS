@@ -27,17 +27,17 @@ body {
 }
 
 blockquote::before {
-  content: "---";
+  content: "»";
 }
 
 blockquote::after {
-  content: "!";
+  content: "«";
 }
 
 p::before {
-  content: "Hallo!!!!";
+  content: "›";
 }
 
 p::after {
-  content: "Bye!!!!!";
+  content: "‹";
 }
