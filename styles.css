@@ -7,13 +7,15 @@
 }
 
 html {
-  font-size: 62.5%; /* 10px / 16px = 0.625 * 100 = 62.5% => every 1rem = 10px*/
+  /* font-size: 62.5%;  */
+  /* 10px / 16px = 0.625 * 100 = 62.5% => every 1rem = 10px*/
+  /* font-size: 1em; */
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: rgb(200, 200, 200);
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 /* höchste spezifität */
@@ -28,6 +30,7 @@ body #box {
 
 /* nidrigste spezifität */
 .box {
+  font-size: 2em;
   margin: 25px;
   padding: 25px;
   width: 400px;
@@ -51,6 +54,10 @@ h1::before {
     rgb(17, 131, 63),
     transparent
   );
+}
+
+h1 {
+  font-size: 2em;
 }
 
 #h1 {
