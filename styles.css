@@ -41,20 +41,28 @@ FOR max-width, THE PIXEL HAS TO BE ABSTEIGENED */
 
 /* This block funktioniert sowohl für 600px als auch für 900px! */
 /* for 600px and wider screens */
-@media screen and (min-width: 600px) {
-  /* @media (min-width: 600px) { */
-  body {
+/* @media screen and (min-width: 600px) { */
+/* @media (min-width: 600px) { */
+/* body {
     background-image: linear-gradient(90deg, tomato, dodgerblue);
   }
 
   h1 {
     color: green;
   }
-}
+} */
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
   h1 {
     color: #fff;
+  }
+}
+
+/* for max-width: 900px and min-width: 900px, at the end, the min-width:900px will be in service because of the reinfolge(sequence!) */
+
+@media screen and (min-width: 900px) {
+  h1 {
+    color: rgb(106, 160, 95);
   }
 }
 
