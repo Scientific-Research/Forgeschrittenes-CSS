@@ -8,15 +8,22 @@
 
 html {
   font-size: 62.5%; /*1rem is 10px*/
+  height: 100vh;
+}
+
+h1 {
+  font-size: 10rem; /*10rem is 100px*/
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(200, 200, 200);
+  background-image: linear-gradient(35deg, red, orange);
 }
 
-@media screen and(min-width:400px) {
+/* for 600px and wider screens */
+@media screen and (min-width: 600px) {
+  /* @media (min-width: 600px) { */
   body {
-    background-color: green;
+    background-image: linear-gradient(90deg, tomato, dodgerblue);
   }
 }
