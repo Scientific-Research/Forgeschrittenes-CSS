@@ -32,6 +32,13 @@ FOR max-width, THE PIXEL HAS TO BE ABSTEIGENED */
   }
 }
 
+/* für unter 600px */
+@media screen {
+  h1 {
+    color: blue;
+  }
+}
+
 /* This block funktioniert sowohl für 600px als auch für 900px! */
 /* for 600px and wider screens */
 @media screen and (min-width: 600px) {
@@ -45,11 +52,11 @@ FOR max-width, THE PIXEL HAS TO BE ABSTEIGENED */
   }
 }
 
-/* @media screen {
+@media screen and (min-width: 600px) and (max-width: 900px) {
   h1 {
-    color: blue;
+    color: #fff;
   }
-} */
+}
 
 @media print {
   /* the below statement doesn't have any effect because the browser will remove it because of too much tint-consuming!*/
